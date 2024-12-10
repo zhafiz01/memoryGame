@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const cardFront = document.createElement('div');
         cardFront.classList.add('card-front');
-        cardFront.innerHTML = `<img src="CardHP.png" alt="Card Back">`; //placeholder for back of the card
+        cardFront.innerHTML = `<img src="assets/CardHP.png" alt="Card Back">`; //placeholder for back of the card
   
         const cardBack = document.createElement('div');
         cardBack.classList.add('card-back');
-        cardBack.innerHTML = `<img src="${value}.png" alt="${value}">`;// Displays cards as an image
+        cardBack.innerHTML = `<img src="assets/${value}.png" alt="${value}">`;// Displays cards as an image
   
         cardInner.appendChild(cardFront);
         cardInner.appendChild(cardBack);
