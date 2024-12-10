@@ -1,3 +1,14 @@
+
+
+
+const cards = document.querySelectorAll(".card")
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("flipped")
+    })
+})
+
 document.addEventListener('DOMContentLoaded', () => {
     const board = document.querySelector('.game-board');
     const startBtn = document.querySelector('.start-btn');
@@ -86,4 +97,3 @@ document.addEventListener('DOMContentLoaded', () => {
     startBtn.addEventListener('click', startGame);
     resetBtn.addEventListener('click', resetGame);
   });
-  
