@@ -7,31 +7,34 @@
     url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.svg#Harry Potter") format("svg");
 }
 
-h1 {
-    font-family: Harry Potter, Arial,;
-}
-
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Harry Potter", sans-serif;
+  color: goldenrod;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #4e0606;
 }
 
 .grid-board {
   display: flex;
   justify-self: center;
   align-items: center;
+  
+  
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  
+  
 }
 
 .card {
@@ -39,6 +42,7 @@ body {
   height: 175px;
   perspective: 1000px;
   cursor: pointer;
+  
 }
 
 .card-inner {
@@ -77,6 +81,8 @@ body {
 
 .container {
   text-align: center;
+  
+  
 }
 
 .card.hidden {
@@ -84,8 +90,14 @@ body {
 }
 
 .start-btn, .reset-btn {
+  background-color: white;
+  color: goldenrod;
+  border: 2px solid goldenrod;
   padding: 10px 20px;
   margin: 10px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  border-radius: 10px;
+  
 }
