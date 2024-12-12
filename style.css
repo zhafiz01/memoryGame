@@ -19,7 +19,6 @@ body {
   margin: 0;
   padding: 20px;
   background-color: #4e0606;
-
 }
 
 .container {
@@ -98,11 +97,12 @@ body {
 
 .start-btn, .reset-btn {
   background-color: white;
-  color: goldenrod;
-  border: 2px solid goldenrod;
-  padding: 12px 24px;
+  color: #4e0606;
+  border: 5px solid goldenrod;
+  padding: 8px 18px 1px 18px;
   margin: 10px;
-  font-size: 18px;
+  font-family: "Harry Potter", sans-serif;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
@@ -110,10 +110,9 @@ body {
 
 .timer {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 10px;
 }
-
 
 @media (max-width: 768px) {
   .grid-board {
@@ -150,7 +149,6 @@ body {
   .grid-container {
       grid-gap: 10px; 
       padding: 10px;
-
   }
 }
 
