@@ -1,10 +1,11 @@
-@font-face {font-family: "Harry Potter";
-    src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot");
-    src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.svg#Harry Potter") format("svg");
+@font-face {
+  font-family: "Harry Potter";
+  src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot");
+  src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot?#iefix") format("embedded-opentype"),
+       url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff2") format("woff2"),
+       url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff") format("woff"),
+       url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.ttf") format("truetype"),
+       url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.svg#Harry Potter") format("svg");
 }
 
 body {
@@ -13,36 +14,42 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   margin: 0;
   padding: 20px;
   background-color: #4e0606;
+
+}
+
+.container {
+  text-align: center;
 }
 
 .grid-board {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
-  
-  
+  width: 100%;
+  height: auto;
+  max-width: 900px; 
+  margin: auto;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  border-radius: 5px;
-  
-  
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 20px; 
+  width: 100%; 
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .card {
-  width: 100px;
-  height: 175px;
+  width: 100%; 
+  aspect-ratio: 3 / 5; 
   perspective: 1000px;
   cursor: pointer;
-  
 }
 
 .card-inner {
@@ -79,12 +86,6 @@ body {
   background-color: #4e0606;
 }
 
-.container {
-  text-align: center;
-  
-  
-}
-
 .card.hidden {
   visibility: hidden;
 }
@@ -93,11 +94,57 @@ body {
   background-color: white;
   color: goldenrod;
   border: 2px solid goldenrod;
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
-  
 }
+
+.timer {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .grid-board {
+      max-width: 90%; 
+  }
+
+  .grid-container {
+      grid-gap: 15px; 
+      padding: 15px;
+  }
+
+  .start-btn, .reset-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-board {
+    max-width: 100%; 
+}
+  .grid-container {
+      grid-gap: 10px; 
+      padding: 10px;
+  }
+
+  .start-btn, .reset-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+      grid-gap: 10px; 
+      padding: 10px;
+
+  }
+}
+
