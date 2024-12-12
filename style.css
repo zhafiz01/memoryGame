@@ -1,3 +1,4 @@
+
 @font-face {font-family: "Harry Potter";
     src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot");
     src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot?#iefix") format("embedded-opentype"),
@@ -22,8 +23,6 @@ body {
   display: flex;
   justify-self: center;
   align-items: center;
-  
-  
 }
 
 .grid-container {
@@ -33,16 +32,13 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 5px;
-  
-  
 }
 
 .card {
   width: 100px;
   height: 175px;
   perspective: 1000px;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
 
 .card-inner {
@@ -81,12 +77,15 @@ body {
 
 .container {
   text-align: center;
-  
-  
 }
 
 .card.hidden {
   visibility: hidden;
+}
+
+.timer {
+  margin-top: 10px;
+  font-size: 1.88em;
 }
 
 .start-btn, .reset-btn {
@@ -95,9 +94,14 @@ body {
   border: 2px solid goldenrod;
   padding: 10px 20px;
   margin: 10px;
-  font-size: 16px;
+  font-size: 1.00em;
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
-  
+}
+
+@media (max-width:480px)  {
+   .container {
+    width: 80%;
+   } 
 }
