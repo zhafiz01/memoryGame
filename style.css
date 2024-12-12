@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Harry Potter";
   src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot");
@@ -88,6 +89,11 @@ body {
 
 .card.hidden {
   visibility: hidden;
+}
+
+.timer {
+  margin-top: 10px;
+  font-size: 1.88em;
 }
 
 .start-btn, .reset-btn {
